@@ -18,10 +18,6 @@ app.use(express.json());
 initializeDb();
 
 const JWT_SECRET = "your_jwt_secret";
-
-
-// ==================== AUTH ====================
-
 // Signup
 app.post("/auth/signup", async (req, res) => {
   try {
